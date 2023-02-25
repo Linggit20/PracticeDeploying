@@ -9,9 +9,13 @@
     .description{
 
         .wrapper{
-
+            padding-bottom: 1.5rem;
+            @include media-breakpoint-down(lg) {
+                border-bottom: 1px solid $white;
+            }
             .footer-brand{
                 margin-bottom: 12px;
+                
                 img{
                     height: 50px;
                     margin-bottom: .5rem;
