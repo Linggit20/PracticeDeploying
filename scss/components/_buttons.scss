@@ -1,0 +1,18 @@
+@use '../custom' as  *;
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 8px 12px;
+    width: 140px;
+    border-radius: 42px;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: .4s;
+    background: $white;
+}
+.form-btn:hover{
+    background: $primary;
+    color: $white;
+}

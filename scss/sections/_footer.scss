@@ -1,0 +1,175 @@
+@use "../custom" as *;
+
+.footer{
+    // background: rgba($secondary, 90%);
+    background: linear-gradient(to right, rgba($primary, 90%), rgba($success, 90%));
+    padding-top: 3rem;
+
+
+    .description{
+
+        .wrapper{
+
+            .footer-brand{
+                margin-bottom: 12px;
+                img{
+                    height: 50px;
+                    margin-bottom: .5rem;
+                }
+            }
+            .info{
+                color: $white;
+                margin-bottom: 4px;
+
+                span{
+                    font-size: .875rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+
+    .links{
+        display: flex;
+        justify-content: end;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+        }
+
+        .wrapper{
+            width: 50%;
+
+            @include media-breakpoint-down(md){
+                width: 100%;
+            }
+
+            h4{
+                color: $white;
+                margin-bottom: .5rem;
+                
+            }
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    
+                    a{
+                        display: block;
+                        color: $white;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        margin-bottom: .5rem;
+                        transition: .2s;
+
+                        &:hover{
+                            text-decoration: underline;
+                            // color: #00C89E;
+                            color: $secondary;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .projects{
+        display: flex;
+        justify-content: end;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+        }
+
+        .wrapper{
+            width: 50%;
+
+            @include media-breakpoint-down(md){
+                width: 100%;
+            }
+
+            h4{
+                color: $white;
+                margin-bottom: .5rem;  
+    
+            }
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    
+                    a{
+                        display: block;
+                        color: $white;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        margin-bottom: .5rem;
+                        transition: .2s;
+
+                        &:hover{
+                            text-decoration: underline;
+                            // color: #00C89E;
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .social{
+        display: flex;
+        justify-content: end;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+        }
+
+        .wrapper{
+            width: 50%;
+
+            @include media-breakpoint-down(md){
+                width: 100%;
+            }
+
+            h4{
+                color: $white;
+                margin-bottom: .5rem;     
+            }
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    
+                    a{
+                        display: block;
+                        color: $white;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        margin-bottom: .5rem;
+                        transition: .2s;
+
+                        &:hover{
+                            text-decoration: underline;
+                            // color: #00C89E;
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .author{
+        border-top: 1px solid $white;
+
+        p{
+            color: $white;
+            font-size: .75rem;
+            text-align: center;
+            margin-top: .75rem;
+        }
+    }
+}

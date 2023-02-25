@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <!-- ----- CSS ----- -->
+    <link rel="stylesheet" href="style.css">    
+    <!-- ----- FONT AWESOME LINK ----- -->
+    <script src="https://kit.fontawesome.com/d828ced68e.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <span class="logo"><a href="#">XOXO</a></span>
+            <div class="menu">
+                <i class="fa-solid fa-xmark closeMenu"></i>
+                <ul class="navbar-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Players</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+                <i class="fa-solid fa-bars-staggered openMenu"></i>
+        </div>
+    </nav>
+
+<script>
+
+const body = document.querySelector("body")
+const nav = document.querySelector("nav")
+const showMenu = document.querySelector(".openMenu")
+const closeMenu = document.querySelector(".closeMenu")
+
+// toggle sidebar
+showMenu.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("openMenu") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+</script>
+</body>
+</html>

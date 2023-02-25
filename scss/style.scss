@@ -1,0 +1,15 @@
+
+@use 'custom';
+
+// Import Components
+@use 'components/animation';
+@use 'components/typography';
+@use 'components/buttons';
+
+//  Import Section
+@use 'sections/navbar';
+@use 'sections/hero-section';
+@use 'sections/about-section';
+@use 'sections/project-section';
+@use 'sections/contact-section';
+@use 'sections/footer';

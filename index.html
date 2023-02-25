@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Google FOnt Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+  <!-- Header Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="mb-5">
+    <section id="home" class="hero-section container">
+      <div class="row">
+        <div class="col-md text-container mb-3 p-3">
+          <h1>Hi!, I'm
+            <span>ALBERTO</span>
+            <span>ALBERTO</span>
+          </h1>
+          <p>As a full-stack web developer, I have the skills and knowledge to build beautiful and functional websites and applications.</p>
+          <button type="button">Hire Me</button>
+          <button class="btn-btn" type="button">Download CV</button>
+        </div>
+        <div class="col-md image-container p-3">
+          <img class="img-fluid" src="./images/banner.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="about-section container" data-aos="fade" data-aos-duration="6000">
+    <div class="row">
+      <div class="col-lg image-container">
+        <img class="img-fluid" src="./images/about.svg" alt="">
+      </div>
+      <div class="col-lg about-me">
+        <h1 class="lg-screen">About Me</h1>
+        <p>
+          Hello there! I am a self taught Web Developer. I started coding since December 2022.
+          I am passionate about creating beautiful, responsive websites and I am always looking
+          to stay up to date with the latest web development trends and technologies.
+          When I'm not coding, I'm playing games and read manhua's or manga.
+        </p>
+        <div class="tab-item">
+          <button class="tab-link active-link" type="button" data-target="skills">Skills</button>
+          <button class="tab-link" type="button" data-target="experience">Experience</button>
+          <button class="tab-link" type="button" data-target="education">Education</button>
+        </div>
+        <ul id="skills" class="tab-content active-content">
+          <li>Responsive Design</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>Java Script</li>
+        </ul>
+        <ul id="experience" class="tab-content">
+          <li><span>Current</span>KodeGo Bootcamp</li>
+          <li><span>2022</span>Self-taught Web Developer</li>
+        </ul>
+        <ul id="education" class="tab-content">
+          <li><span>2022</span>Senior HS. Graduate at Cat College Ligao</li>
+        </ul>
+      </div>
+      <div class="col-lg-12 btween-lg-xl my-5  text-center">
+        <div class="tab-item">
+          <button class="tab-link active-link" type="button" data-target="lgXlSkills">Skills</button>
+          <button class="tab-link" type="button" data-target="lgXlExperience">Experience</button>
+          <button class="tab-link" type="button" data-target="lgXlEducation">Education</button>
+        </div>
+        <ul id="lgXlSkills" class="tab-content active-content">
+          <li>Responsive Design</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>Java Script</li>
+        </ul>
+        <ul id="lgXlExperience" class="tab-content">
+          <li><span>Current</span>KodeGo Bootcamp</li>
+          <li><span>2022</span>Self-taught Web Developer</li>
+        </ul>
+        <ul id="lgXlEducation" class="tab-content">
+          <li><span>2022</span>Senior HS. Graduate at Cat College Ligao</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project" class="project-section" data-aos="fade" data-aos-duration="6000">
+      <div class="container">
+        <div class="project-section-title">
+          <h1 class="title">Projects</h1>
+          <p>My Works</p>
+        </div>
+       <div class="row">
+        <div class="col-sm mb-4 project" data-aos="zoom-in" data-aos-duration="6000">
+          <div class="project-container">
+            <a href="./project-link/clickCounter/index.html">
+              <img class="img-fluid" src="./images/click-counter.png" alt="">
+            </a>
+          <div class="project-description">
+            <a class="text-center" href="./project-link/clickCounter/index.html">Explore</a>
+          </div>
+          </div>
+          <div class="project-title my-3 text-center">
+            Click Counter
+            <p>I created this project  to practice my Java Script Skills</p>
+          </div>
+        </div>
+        <div class="col-sm mb-4 project" data-aos="zoom-in" data-aos-duration="6000">
+          <div class="project-container">
+            <a href="./project-link/LoginForm/index.html">
+              <img class="img-fluid" src="./images/login.png" alt="">
+            </a>
+          <div class="project-description">
+            <a href="./project-link/LoginForm/index.html">Explore</a>
+          </div>
+          </div>
+          <div class="project-title my-3 text-center">
+            Simple Login Form
+            <p>Login Form with toggle button to show and hide password</p>
+          </div>
+        </div>
+        <div class="col-sm mb-4 project" data-aos="zoom-in" data-aos-duration="6000">
+          <div class="project-container">
+            <a href="./project-link/responsive-sideBar/index.html">
+              <img class="img-fluid" src="./images/sidebar.png" alt="">
+            </a>
+          <div class="project-description">
+            <a href="./project-link/responsive-sideBar/index.html">Explore</a>
+          </div>
+          </div>  
+          <div class="project-title my-3 text-center">
+            Responsive Sidebar
+            <p>This was my first time working on responsive design and a little bit Java Script</p>
+          </div>
+        </div>
+       </div>
+      </div>
+  </section>
+
+  <!-- Contact-Section -->
+  <section id="contact" class="contact-section"  data-aos="fade-in" data-aos-duration="6000">
+      <div class="container p-md-5">
+        <div class="row">
+          <div class="col-lg dev-info">
+            <div class="contact-title">
+              <h1>Get In Touch With Me</h1>
+              <p>
+                Let's talk about your website or project.
+                Send me a message and I will be in touch within one business day.
+              </p>
+            </div>
+            <div class="info">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Tuburan, Ligao City, Albay</span>
+            </div>
+            <div class="info">
+              <i class="fa-solid fa-phone"></i>
+              <span>+639511804050</span>
+            </div>
+            <div class="info last">
+              <i class="fa-solid fa-envelope"></i>
+              <span>botonesallan7@gmail.com</span>
+            </div>
+          </div>
+          <div class="col-lg user-interface">
+            <form>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+                <label for="floatingInputValue">Name:</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+                <label for="floatingInputValue">Email:</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Message:</label>
+              </div>
+              <button class="form-btn" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer --> 
+  <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-3 description">
+            <div class="wrapper">
+              <a class="footer-brand" href="#">
+                <img src="./images/footer-logo.png" alt="">
+              </a>
+              <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Tuburan, Ligao City, Albay</span>
+              </div>
+              <div class="info">
+                <i class="fa-solid fa-phone"></i>
+                <span>+639511804050</span>
+              </div>
+              <div class="info last">
+                <i class="fa-solid fa-envelope"></i>
+                <span>botonesallan7@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 links">
+            <div class="wrapper">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col mb-3 projects">
+            <div class="wrapper">
+                <h4>Projects</h4>
+              <ul>
+                <li><a href="./project-link/clickCounter/index.html">Click Counter</a></li>
+                <li><a href="./project-link//LoginForm/index.html">Simple Form</a></li>
+                <li><a href="./project-link/responsive-sideBar/index.html">Side Navbar</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md mb-3 social">
+            <div class="wrapper">
+              <h4>Social</h4>
+              <ul>
+                <li><a href="https://www.facebook.com/adeniros2">Facebook</a></li>
+                <li><a href="#">Tiktok</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-fluid text-center author">
+            <p>Alberto Deniros &copy 2023 | All Rights Reserved</p>
+          </div>
+        </div>
+        </div>
+      </div>
+  </footer>
+
+
+
+    
+  <!-- Bootstrapt JS -->
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <!-- AoS Js-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Custom Js -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
